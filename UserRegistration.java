@@ -23,6 +23,7 @@ public class UserRegistration {
 		boolean result = m.matches();
 		System.out.println(result);
 	}
+
 	public static void main(String[] args) {
 		UserRegistration User = new UserRegistration();
 		
@@ -32,13 +33,11 @@ public class UserRegistration {
 		
 		System.out.println("Enter first name: ");
 		System.out.println("Enter Last name: ");
-	
+		
 		String name = sc.next();
 	User.FirstnameValidation(FirstNamepattern,name);
 	
 	User.LastnameValidation(LastNamepattern,name);
-		
-	
 	}
 
 }
